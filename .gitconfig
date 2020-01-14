@@ -1,0 +1,21 @@
+[user]
+	name = Jason Tam
+	email = jasontamemail@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = emacs -nw
+	autocrlf = input
+[help]
+	autocorrect = 1
+[color]
+	ui = auto
+[alias]
+        r = !git reset && git status
+	cleanall = !git clean -f -d && git status
+
+[hub]
+	protocol = https
