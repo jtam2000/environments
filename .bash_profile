@@ -12,6 +12,8 @@ alias ne='emacs -nw'
 alias la='ls -a'
 alias py='python3'
 alias ipy='ipython'
+alias pip='pip3'
+
 #
 # prompts
 #
