@@ -13,6 +13,7 @@ alias la='ls -a'
 alias py='python3'
 alias ipy='ipython'
 alias pip='pip3'
+alias python='python3'
 
 #
 # prompts
