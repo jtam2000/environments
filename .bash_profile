@@ -14,6 +14,8 @@ alias py='python3'
 alias ipy='ipython'
 alias pip='pip3'
 alias python='python3'
+alias jupy='jupyter-notebook'
+alias jupyter='jupyter-notebook'
 
 #
 # prompts
