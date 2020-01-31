@@ -13,10 +13,9 @@ alias la='ls -a'
 alias py='python3'
 alias ipy='ipython'
 alias pip='pip3'
-alias python='python3'
 alias jupy='jupyter-notebook'
 alias jupyter='jupyter-notebook'
-
+alias jpy='jupyter-notebook'
 #
 # prompts
 #
@@ -29,7 +28,8 @@ PS1=$GREEN"[\@]/\W"$YELLOW'$(__git_ps1 "(%s)")'"=>"$DEFAULT
 #
 # Python
 #
-export PYTHONPATH=src:test:../src:../test:/Users/jason/Library/Python/3.7/bin:$PYTHONPATH
+export PYTHONLOCALPACKAGE=/usr/local/lib/python3.7/site-packages
+export PYTHONPATH=./:../:src:test:../src:../test:$PYTHONLOCALPACKAGE:/Users/jason/Library/Python/3.7/bin:$PYTHONPATH
 
 
 #
