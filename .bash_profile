@@ -30,7 +30,7 @@ PS1=$GREEN"[\@]/\W"$YELLOW'$(__git_ps1 "(%s)")'"=>"$DEFAULT
 #
 export PYTHONLOCALPACKAGE=/usr/local/lib/python3.7/site-packages
 export PYTHONPATH=./:../:src:test:../src:../test:$PYTHONLOCALPACKAGE:/Users/jason/Library/Python/3.7/bin:$PYTHONPATH
-
+export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
 
 #
 # Kafka
