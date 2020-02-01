@@ -7,7 +7,8 @@ source ~/.git-prompt.sh
 #
 # alises
 #
-alias learning='cd ~/Development/Learning'
+LEARNING_PATH=~/Development/Learning
+alias learning='cd $LEARNING_PATH'
 alias ne='emacs -nw'
 alias la='ls -a'
 alias py='python3'
@@ -28,9 +29,14 @@ PS1=$GREEN"[\@]/\W"$YELLOW'$(__git_ps1 "(%s)")'"=>"$DEFAULT
 #
 # Python
 #
-export PYTHONLOCALPACKAGE=/usr/local/lib/python3.7/site-packages
-export PYTHONPATH=./:../:src:test:../src:../test:$PYTHONLOCALPACKAGE:/Users/jason/Library/Python/3.7/bin:$PYTHONPATH
-export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+export PYTHONLOCALPACKAGE=/Library/Frameworks/Python.framework/Versions/3.7/bin
+source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+export PROJECT_HOME=$LEARNING_PATH
+
+#export PYTHONPATH=./:../:src:test:../src:../test:$PYTHONLOCALPACKAGE:/Users/jason/Library/Python/3.7/bin:$PYTHONPATH
+#export PATH=$PYTHONLOCALPACKAGE:$PATH
+
 
 #
 # Kafka
