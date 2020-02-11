@@ -36,7 +36,7 @@ export PROJECT_HOME=$LEARNING_PATH
 
 # should not need to do this for PYTHON, do this only for temporary basis
 #export PYTHONPATH=./:../:src:test:../src:../test:$PYTHONLOCALPACKAGE:/Users/jason/Library/Python/3.7/bin:$PYTHONPATH
-export PATH=$PYTHONLOCALPACKAGE:$PATH
+export PATH=./:../:$PYTHONLOCALPACKAGE:$PATH
 
 
 #
