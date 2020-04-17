@@ -16,6 +16,6 @@
 [alias]
         r = !git reset && git status
 	cleanall = !git clean -f -d && git status
-
+	logg = !git log --graph --oneline --decorate
 [hub]
 	protocol = https
