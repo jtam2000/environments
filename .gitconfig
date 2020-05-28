@@ -18,6 +18,6 @@
 	cleanall = !git clean -f -d && git status
 	logg = !git log --graph --oneline --decorate
 	jlog = !git logg --pretty='format:%C(auto)%cs %<(120,trunc)%s%h %D%cd' --date=relative
-
+	s = ! git status
 [hub]
 	protocol = https
