@@ -43,3 +43,4 @@ export PATH=./:../:$PYTHONLOCALPACKAGE:$PATH
 # Kafka
 #
 export PATH=/usr/local/kafka_2.12-2.4.0/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
