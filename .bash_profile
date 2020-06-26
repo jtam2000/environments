@@ -16,6 +16,8 @@ alias pip='pip3'
 alias jupy='jupyter-notebook'
 alias jupyter='jupyter-notebook'
 alias jpy='jupyter-notebook'
+
+
 #
 # git prompts
 #
@@ -44,6 +46,7 @@ export PATH=./:../:$PYTHONLOCALPACKAGE:$PATH
 export PATH=/usr/local/kafka_2.12-2.4.0/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 
+
 #
 # Java
 #
@@ -55,3 +58,9 @@ alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
 # default to Java 11
 java11
+
+
+#
+# Path
+#
+export PATH=$PATH:/usr/libexec
