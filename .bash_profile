@@ -1,4 +1,3 @@
-
 # GIT 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
@@ -44,3 +43,15 @@ export PATH=./:../:$PYTHONLOCALPACKAGE:$PATH
 #
 export PATH=/usr/local/kafka_2.12-2.4.0/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
+#
+# Java
+#
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
