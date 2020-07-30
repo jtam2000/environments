@@ -16,7 +16,8 @@ alias pip='pip3'
 alias jupy='jupyter-notebook'
 alias jupyter='jupyter-notebook'
 alias jpy='jupyter-notebook'
-alias myip='ipconfig getifaddr en0"
+alias myip='ipconfig getifaddr en0; ipconfig getifaddr ne1'
+
 #
 # git prompts
 #
