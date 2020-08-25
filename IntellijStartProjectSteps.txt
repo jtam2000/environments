@@ -1,0 +1,20 @@
+Steps to create a Java-Gradle Project In Intellij that uses git hub as source respository
+
+#
+# Step 1: set up GIT
+#
+-find a directory and create a root directory
+     cd $ROOT
+     mkdir $PROJECT_ROOT_DIR
+
+-go into $PROJECT_ROOT_DIR and create git repository
+    cd $PROJECT_ROOT_DIR ; git init
+
+
+-create entry in github
+    hub create $PROJECT_NAME
+
+
+#
+# Step 2: Intellij
+#
