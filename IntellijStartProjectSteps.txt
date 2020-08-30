@@ -1,16 +1,15 @@
-Steps to create a Java-Gradle Project In Intellij that uses git hub as source respository
+Steps to create a Java-Gradle Project In Intellij that uses git hub as source repository
 
 #
 # Step 1: GIT and Git Hub
 #
-Usage: source learnproject.ksh <project_name
+Usage: source learnproject.ksh <project_name>
 script executes:
-         1. mkdir <project_name> in learning folder
+         1. mkdir <project_name> in root folder
          2. git init <project_name>
          3. create <project_name> in github
          4. cd <project_name>
-   learning folder = /Users/JasonTam/Development/Learning
-
+         5. git remote -v
 
 
 #

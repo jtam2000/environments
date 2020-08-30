@@ -15,11 +15,14 @@ function usage() {
 
 function start_project() {
 
-    cd $LEARNING_NAME
+    cd $PROJECT_ROOT
     git init $PROJECT_NAME
 
     cd $PROJECT_NAME
-    hub create -po $PROJECT_NAME
+    # -p for private repository
+    hub create -p $PROJECT_NAME
+    # show that the remote was created successfully
+    git remote -v
 }
 
 if [ $# -eq 0 ]; then
