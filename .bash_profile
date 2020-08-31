@@ -19,14 +19,14 @@ alias jpy='jupyter-notebook'
 alias myip='ipconfig getifaddr en0; ipconfig getifaddr ne1'
 
 #
-# git prompts
+# git
 #
 DEFAULT="\[\033[0;00m\]"
 GREEN="\[\033[0;32m\]"
 YELLOW="\[\033[0;33m\]"
 CYAN="\[\033[0;36m\]"
 PS1=$GREEN"[\@]/\W"$YELLOW'$(__git_ps1 "(%s)")'"=>"$DEFAULT
-
+alias gitproject='source  ~/Development/environments/gitproject.ksh'
 #
 # Python
 #
