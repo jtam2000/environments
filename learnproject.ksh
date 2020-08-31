@@ -20,7 +20,8 @@ function start_project() {
 
     cd $PROJECT_NAME
     # -p for private repository
-    hub create -p $PROJECT_NAME
+    hub create -p -c $PROJECT_NAME
+
     # show that the remote was created successfully
     git remote -v
 }
