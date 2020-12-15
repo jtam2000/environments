@@ -10,9 +10,6 @@ HELP.md
 #
 .gradle/**
 gradle/.DS_Store
-.gradle/
-.gradle/**/
-gradle/wrapper/gradle-wrapper.jar
 
 
 ### STS ###
