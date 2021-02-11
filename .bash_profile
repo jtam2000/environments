@@ -27,6 +27,7 @@ YELLOW="\[\033[0;33m\]"
 CYAN="\[\033[0;36m\]"
 PS1=$GREEN"[\@]/\W"$YELLOW'$(__git_ps1 "(%s)")'"=>"$DEFAULT
 alias gitproject='source  ~/Development/environments/gitproject.ksh'
+
 #
 # Python
 #
@@ -48,6 +49,17 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/H
 
 
 #
+# pyspark
+#
+#export SPARK_HOME=/usr/local/Cellar/apache-spark/3.0.1
+export PYSPARK_PYTHON=python3
+export SPARK_HOME=~/Development/tools/spark/spark-3.0.1-bin-hadoop2.7
+export SPARK_LOCAL_IP=localhost
+export PATH=$SPARK_HOME/bin:$PATH
+export PYSPARK_SUBMIT_ARGS="pyspark-shell"
+export PYSPARK_DRIVER_PYTHON=jupyter
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+#
 # Java
 #
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
@@ -58,7 +70,6 @@ alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
 # default to Java 11
 java11
-
 
 #
 # Path
