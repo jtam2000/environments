@@ -49,6 +49,11 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/H
 
 
 #
+# Hadoop
+#
+export HADOOP_HOME= /usr/local/Cellar/hadoop/3.3.0/libexec
+
+#
 # pyspark
 #
 export SPARK_HOME=/usr/local/Cellar/apache-spark/3.0.1/libexec
