@@ -54,6 +54,11 @@ export HADOOP_INSTALL=/usr/local/Cellar/hadoop/3.3.0
 export PATH=$HADOOP_INSTALL/sbin:$PATH
 
 #
+# Hadoop
+#
+export HADOOP_HOME=/usr/local/Cellar/hadoop/3.3.0/libexec
+
+#
 # pyspark
 #
 export SPARK_HOME=/usr/local/Cellar/apache-spark/3.0.1/libexec
