@@ -47,6 +47,11 @@ export PATH=./:../:$PYTHONLOCALPACKAGE:$PATH
 export PATH=/usr/local/kafka_2.12-2.4.0/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 
+#
+# Hadoop
+#
+export HADOOP_INSTALL=/usr/local/Cellar/hadoop/3.3.0
+export PATH=$HADOOP_INSTALL/sbin:$PATH
 
 #
 # pyspark
