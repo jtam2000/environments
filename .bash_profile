@@ -31,9 +31,13 @@ alias gitproject='source  ~/Development/environments/gitproject.ksh'
 #
 # Python
 #
-export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
-export PYTHONLOCALPACKAGE=/Library/Frameworks/Python.framework/Versions/3.7/bin
-source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+#export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+
+#export PYTHONLOCALPACKAGE=/Library/Frameworks/Python.framework/Versions/3.7/bin
+export PYTHONLOCALPACKAGE=/usr/local/bin
+#source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 export PROJECT_HOME=$LEARNING_PATH
 
 # should not need to do this for PYTHON, do this only for temporary basis
