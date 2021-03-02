@@ -68,10 +68,11 @@ export HADOOP_HOME=/usr/local/Cellar/hadoop/3.3.0/libexec
 export SPARK_HOME=/usr/local/Cellar/apache-spark/3.0.1/libexec
 export PYSPARK_PYTHON=python3
 export SPARK_LOCAL_IP=localhost
-export PATH=$SPARK_HOME/bin:$PATH
+export PATH=$SPARK_HOME/sbin:$SPARK_HOME/bin:$PATH
 export PYSPARK_SUBMIT_ARGS="pyspark-shell"
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+
 #
 # Java
 #
