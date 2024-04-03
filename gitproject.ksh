@@ -29,8 +29,8 @@ function start_project() {
     # create main branch
     git branch -M main
 
-    # create entry on github, use -p for private repository
-    hub create -p -c $PROJECT_NAME
+    # create entry on github, private by default, you can always change on github later
+    gh repo create $PROJECT_NAME --private
 
     # push the first commit to github
     # and show that the remote was created successfully
