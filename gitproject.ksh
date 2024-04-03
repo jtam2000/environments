@@ -29,12 +29,17 @@ function start_project() {
     # create main branch
     git branch -M main
 
-    # create entry on github, private by default, you can always change on github later
+    # create repo on github, private by default, you can always change on github later
     gh repo create $PROJECT_NAME --private
 
     # push the first commit to github
     # and show that the remote was created successfully
+
+     # origin_url should be like: https://github.com/jtam2000/learn_terraform.git
+    origin_url=`gh api user --jq '.html_url'`/$PROJECT_NAME.git
+    git remote add origin $origin_url
     git push --set-upstream origin main
+
     git remote -v
     git log -1
     echo -e "\n\n You are at branch:"
