@@ -88,4 +88,7 @@ java11
 #
 # Path
 #
-export PATH=$PATH:/usr/libexec
+export PATH=~/bin:$PATH:/usr/libexec
+
+# silence message to change bash to zsh
+export BASH_SILENCE_DEPRECATION_WARNING=1
